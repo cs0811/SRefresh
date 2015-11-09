@@ -5,8 +5,8 @@ Pod::Spec.new do |s|
 
 
   s.name         = "SRefresh"
-  s.version      = "0.0.1"
-  s.summary      = "A short description of SRefresh."
+  s.version      = "0.1.0"
+  s.summary      = "this a refreshController."
 
   s.description  = <<-DESC
 *	模仿淘宝刷新，滚动到局里底部一定距离后，自动加载更多
@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
 
 
  
-  s.license      = "MIT (example)"
+  s.license      = "MIT"
 
 
  
@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
 
  
-  s.source       = { :git => "https://github.com/cs0811/SRefresh.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/cs0811/SRefresh.git", :tag => "0.1.0" }
 
 
    s.source_files  =  "Classes/*.{h,m}"
