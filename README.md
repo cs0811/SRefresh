@@ -19,7 +19,8 @@ pod "SRefresh" , "~>0.1.0"
 
 ~ 移除刷新
 
--(void)dealloc {
+-(void)dealloc 
+{
     [_tableview removeRrefresh];
 }
     
