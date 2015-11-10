@@ -6,6 +6,7 @@ pod "SRefresh" , "~>0.1.0"
 ~ 注册刷新
 
 [_tableview addRefreshBlock:^(PanState state) {
+
         if (state == Pull) {
             NSLog(@"下拉");
         }else if (state == Push) {
@@ -19,8 +20,8 @@ pod "SRefresh" , "~>0.1.0"
 
 ~ 移除刷新
 
--(void)dealloc 
-{
+-(void)dealloc {
+
     [_tableview removeRrefresh];
 }
     
