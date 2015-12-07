@@ -23,3 +23,5 @@ pod "SRefresh" , "~>0.1.0"
                 [_tableview removeRrefresh];
         }
     
+
+![image](https://github.com/cs0811/SRefresh/blob/master/SRefreshGif.gif) 
