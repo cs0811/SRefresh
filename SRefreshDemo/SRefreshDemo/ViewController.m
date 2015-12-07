@@ -28,11 +28,9 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.view.backgroundColor = [UIColor whiteColor];
-    self.edgesForExtendedLayout = UIRectEdgeNone;
-    self.extendedLayoutIncludesOpaqueBars = NO;
+    self.automaticallyAdjustsScrollViewInsets = NO;
     
     [self leftBtn];
-    
 }
 
 - (void)leftBtn {
@@ -57,7 +55,8 @@
     _tableview.tableFooterView = [[UIView alloc] init];
     [self.view addSubview:_tableview];
     [_tableview mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.size.left.equalTo(wself.view);
+        make.left.right.bottom.equalTo(wself.view);
+        make.top.equalTo(wself.view).offset(64);
     }];
     
     [_tableview addRefreshBlock:^(PanState state) {
