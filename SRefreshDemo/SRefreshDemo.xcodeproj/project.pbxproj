@@ -17,7 +17,7 @@
 		122A5FCB1BF0A74A00F39A6C /* LoadingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 122A5FC61BF0A74A00F39A6C /* LoadingView.m */; };
 		122A5FCC1BF0A74A00F39A6C /* StartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 122A5FC81BF0A74A00F39A6C /* StartView.m */; };
 		122A5FCD1BF0A74A00F39A6C /* UIScrollView+SRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = 122A5FCA1BF0A74A00F39A6C /* UIScrollView+SRefresh.m */; };
-		ED4979947CD77426FFC4F411 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 38E804C7C56E2E8DFA0943A3 /* libPods.a */; };
+		15A0CFC27D523E887E7238C4 /* libPods-SRefreshDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AE09A88F3BB8D9231E9D13B /* libPods-SRefreshDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0448A3DCD788712D112A7E4D /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		03675D90915A6958616CDFFA /* Pods-SRefreshDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRefreshDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-SRefreshDemo/Pods-SRefreshDemo.release.xcconfig"; sourceTree = "<group>"; };
 		122A5F9C1BF0A68F00F39A6C /* SRefreshDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SRefreshDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		122A5FA01BF0A68F00F39A6C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		122A5FA21BF0A68F00F39A6C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,8 +51,8 @@
 		122A5FC81BF0A74A00F39A6C /* StartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartView.m; sourceTree = "<group>"; };
 		122A5FC91BF0A74A00F39A6C /* UIScrollView+SRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+SRefresh.h"; sourceTree = "<group>"; };
 		122A5FCA1BF0A74A00F39A6C /* UIScrollView+SRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+SRefresh.m"; sourceTree = "<group>"; };
-		38E804C7C56E2E8DFA0943A3 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		FE4CDE199F4F77B140E53B63 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2AE09A88F3BB8D9231E9D13B /* libPods-SRefreshDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SRefreshDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4812F1F8EEDFA84C7F594104 /* Pods-SRefreshDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SRefreshDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SRefreshDemo/Pods-SRefreshDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED4979947CD77426FFC4F411 /* libPods.a in Frameworks */,
+				15A0CFC27D523E887E7238C4 /* libPods-SRefreshDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,14 +74,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1013DC1D2C3530B571DBA36B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4812F1F8EEDFA84C7F594104 /* Pods-SRefreshDemo.debug.xcconfig */,
+				03675D90915A6958616CDFFA /* Pods-SRefreshDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		122A5F931BF0A68F00F39A6C = {
 			isa = PBXGroup;
 			children = (
 				122A5F9E1BF0A68F00F39A6C /* SRefreshDemo */,
 				122A5FB81BF0A68F00F39A6C /* SRefreshDemoTests */,
 				122A5F9D1BF0A68F00F39A6C /* Products */,
-				76AFF1DCC016FCFD534690FB /* Pods */,
-				F75465ED897107D8F18B883D /* Frameworks */,
+				1013DC1D2C3530B571DBA36B /* Pods */,
+				C8E498262C8113C6AF55F848 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -141,19 +150,10 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		76AFF1DCC016FCFD534690FB /* Pods */ = {
+		C8E498262C8113C6AF55F848 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				0448A3DCD788712D112A7E4D /* Pods.debug.xcconfig */,
-				FE4CDE199F4F77B140E53B63 /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		F75465ED897107D8F18B883D /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				38E804C7C56E2E8DFA0943A3 /* libPods.a */,
+				2AE09A88F3BB8D9231E9D13B /* libPods-SRefreshDemo.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -165,12 +165,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 122A5FBE1BF0A68F00F39A6C /* Build configuration list for PBXNativeTarget "SRefreshDemo" */;
 			buildPhases = (
-				EE0B75AB5AD34317076EF5EF /* Check Pods Manifest.lock */,
+				1968DA452D71A36602B3F428 /* [CP] Check Pods Manifest.lock */,
 				122A5F981BF0A68F00F39A6C /* Sources */,
 				122A5F991BF0A68F00F39A6C /* Frameworks */,
 				122A5F9A1BF0A68F00F39A6C /* Resources */,
-				4D431727926B4EC30597C011 /* Embed Pods Frameworks */,
-				753E4C533FCC93A182691E4D /* Copy Pods Resources */,
+				97C29E8BB4A1319DB819A6A0 /* [CP] Embed Pods Frameworks */,
+				49CE58720FD7E5637EA58C44 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,49 +257,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4D431727926B4EC30597C011 /* Embed Pods Frameworks */ = {
+		1968DA452D71A36602B3F428 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		753E4C533FCC93A182691E4D /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		EE0B75AB5AD34317076EF5EF /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		49CE58720FD7E5637EA58C44 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SRefreshDemo/Pods-SRefreshDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		97C29E8BB4A1319DB819A6A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SRefreshDemo/Pods-SRefreshDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -438,7 +438,7 @@
 		};
 		122A5FBF1BF0A68F00F39A6C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0448A3DCD788712D112A7E4D /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 4812F1F8EEDFA84C7F594104 /* Pods-SRefreshDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SRefreshDemo/Info.plist;
@@ -451,7 +451,7 @@
 		};
 		122A5FC01BF0A68F00F39A6C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE4CDE199F4F77B140E53B63 /* Pods.release.xcconfig */;
+			baseConfigurationReference = 03675D90915A6958616CDFFA /* Pods-SRefreshDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SRefreshDemo/Info.plist;
